@@ -8,11 +8,3 @@ collections:
   docs:
     output: true
     permalink: /:collection/:path/
-    name: "materials"
-
-# Navigationsstruktur optional anpassbar (nur bei Bedarf)
-# just_the_docs:
-#   collections:
-#     wmc:
-#       name: "WMC"
-#       nav_order: 2
