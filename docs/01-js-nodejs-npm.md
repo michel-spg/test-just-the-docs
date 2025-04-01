@@ -1,24 +1,24 @@
 ---
 title: "Node.js und NPM"
-nav_order: 1
+nav_order: 2
 layout: default
 ---
 
-== WMC - Einführung in Node.js und NPM
+## WMC - Einführung in Node.js und NPM
 
 Node.js ist eine Plattform, die es ermöglicht, JavaScript auf der Server-Seite auszuführen.
 
-=== Wozu wird Node.js genutzt?
+### Wozu wird Node.js genutzt?
 
 Node.js eignet sich besonders gut für Anwendungen, die schnelle und effiziente I/O-Operationen erfordern. Es ist beliebt für die Entwicklung von:
 
-- ** Zugriff auf Dateisysteme**: Node.js kann verwendet werden, um Dateien zu lesen, zu schreiben und zu verwalten.
+- **Zugriff auf Dateisysteme**: Node.js kann verwendet werden, um Dateien zu lesen, zu schreiben und zu verwalten.
 - **Zugriff auf Datenbanken**: Node.js kann verwendet werden, um Datenbanken wie MongoDB, MySQL und PostgreSQL zu verwalten.
 - **Webservern**: Node.js kann verwendet werden, um skalierbare und schnelle Webserver zu erstellen, die HTTP-Anfragen effizient verarbeiten.
 - **APIs**: RESTful-APIs und GraphQL-APIs werden oft in Node.js entwickelt, da es leichtgewichtig und asynchron ist.
 - **Mikroservices**: Node.js eignet sich hervorragend für die Erstellung von leichtgewichtigen Mikroservices, die auf Container-basierte Architekturen wie Docker und Kubernetes abgestimmt sind.
 
-=== Merkmale von Node.js
+### Merkmale von Node.js
 
 Node.js bietet einige wichtige Funktionen, die es für bestimmte Anwendungsfälle besonders nützlich machen:
 
@@ -26,11 +26,11 @@ Node.js bietet einige wichtige Funktionen, die es für bestimmte Anwendungsfäll
 - **Single-Threaded**: Trotz der Verwendung eines einzigen Threads für die Verarbeitung verwendet Node.js asynchrone Ereignisse, um gleichzeitig mehrere Verbindungen zu verwalten.
 - **V8 Engine**: Node.js verwendet die Google V8 Engine, um JavaScript sehr effizient auf der Server-Seite auszuführen.
 
-=== Einführungsbeispiel: Ein einfacher HTTP-Server
+### Einführungsbeispiel: Ein einfacher HTTP-Server
 
 Node.js wird oft verwendet, um Webserver zu erstellen. Hier ist ein einfaches Beispiel, das einen HTTP-Server erstellt, der auf Anfragen antwortet:
 
-[source, javascript]
+[source,js]
 ----
 const http = require('http');
 
@@ -48,7 +48,7 @@ server.listen(port, hostname, () => {
 });
 ----
 
-==== Erklärung
+#### Erklärung
 
 - `require('http')`: Importiert das eingebaute HTTP-Modul von Node.js, mit dem wir einen Server erstellen können.
 - `http.createServer()`: Erstellt einen HTTP-Server, der auf eingehende Anfragen reagiert.
@@ -64,7 +64,7 @@ $ node server.js
 
 Dann öffne deinen Browser und rufe `http://127.0.0.1:3000` auf, um die Ausgabe "Hello, World!" zu sehen.
 
-=== Fazit
+### Fazit
 
 Node.js bietet eine schnelle und effiziente Möglichkeit, JavaScript auf der Server-Seite zu verwenden. Es kann als Basis für moderne Webanwendungen, APIs und Echtzeitanwendungen verwendet werden.
 
@@ -72,7 +72,7 @@ Node.js bietet eine schnelle und effiziente Möglichkeit, JavaScript auf der Ser
 
 NPM (Node Package Manager) ist das Standard-Tool von Node.js zum Installieren, Verwalten und Teilen von Paketen und Bibliotheken. Es ermöglicht Entwicklern, externe Abhängigkeiten (Pakete) einfach in ihren Projekten zu verwenden.
 
-=== NPM installieren
+### NPM installieren
 
 NPM wird automatisch zusammen mit Node.js installiert. Um zu überprüfen, ob NPM installiert ist und welche Version verwendet wird, kannst du den folgenden Befehl ausführen:
 
@@ -101,7 +101,7 @@ $ npm install -g nodemon
 
 Nodemon ist ein Tool, das es ermöglicht, Node.js-Skripte automatisch bei Dateiänderungen neu zu starten.
 
-=== Datei package.json
+### Datei package.json
 
 Wenn du NPM-Pakete in deinem Projekt installierst, wird die Datei `package.json` erstellt oder aktualisiert. Diese Datei enthält wichtige Informationen über dein Projekt und alle installierten Abhängigkeiten.
 
@@ -132,7 +132,7 @@ $ npm install
 
 Dieser Befehl installiert alle Pakete, die in der `package.json` Datei unter "dependencies" aufgeführt sind.
 
-== Einführungsbeispiel: Ein einfacher HTTP-Server mit Express.js
+## Einführungsbeispiel: Ein einfacher HTTP-Server mit Express.js
 
 Express.js ist ein minimaler und flexibler Web-Framework für Node.js, das die Erstellung von Webanwendungen und APIs erleichtert. Hier ist ein einfaches Beispiel, das zeigt, wie du einen Webserver mit Express.js erstellen kannst:
 
@@ -157,7 +157,7 @@ app.listen(port, () => {
 });
 ----
 
-=== Erklärung
+### Erklärung
 
 - `require('express')`: Importiert das Express-Framework.
 - `const app = express()`: Erstellt eine neue Express-Anwendung.
