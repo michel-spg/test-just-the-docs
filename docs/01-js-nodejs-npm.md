@@ -30,8 +30,7 @@ Node.js bietet einige wichtige Funktionen, die es für bestimmte Anwendungsfäll
 
 Node.js wird oft verwendet, um Webserver zu erstellen. Hier ist ein einfaches Beispiel, das einen HTTP-Server erstellt, der auf Anfragen antwortet:
 
-[source,js]
-----
+```javascript
 const http = require('http');
 
 const hostname = '127.0.0.1';
@@ -46,7 +45,7 @@ const server = http.createServer((req, res) => {
 server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
-----
+```	
 
 #### Erklärung
 
@@ -57,10 +56,9 @@ server.listen(port, hostname, () => {
 
 Um den Server auszuführen, speichere das Skript als `server.js` und führe es mit Node.js aus:
 
-[source, bash]
-----
+```bash
 $ node server.js
-----
+```
 
 Dann öffne deinen Browser und rufe `http://127.0.0.1:3000` auf, um die Ausgabe "Hello, World!" zu sehen.
 
@@ -68,7 +66,7 @@ Dann öffne deinen Browser und rufe `http://127.0.0.1:3000` auf, um die Ausgabe 
 
 Node.js bietet eine schnelle und effiziente Möglichkeit, JavaScript auf der Server-Seite zu verwenden. Es kann als Basis für moderne Webanwendungen, APIs und Echtzeitanwendungen verwendet werden.
 
-== NPM: Node Package Manager
+## NPM: Node Package Manager
 
 NPM (Node Package Manager) ist das Standard-Tool von Node.js zum Installieren, Verwalten und Teilen von Paketen und Bibliotheken. Es ermöglicht Entwicklern, externe Abhängigkeiten (Pakete) einfach in ihren Projekten zu verwenden.
 
@@ -76,28 +74,25 @@ NPM (Node Package Manager) ist das Standard-Tool von Node.js zum Installieren, V
 
 NPM wird automatisch zusammen mit Node.js installiert. Um zu überprüfen, ob NPM installiert ist und welche Version verwendet wird, kannst du den folgenden Befehl ausführen:
 
-[source, bash]
-----
+```bash
 $ npm -v
-----
+```
 
-=== NPM-Pakete installieren
+### NPM-Pakete installieren
 
 Um ein Paket zu installieren, wird der Befehl `npm install` verwendet. Zum Beispiel kannst du das beliebte Web-Framework Express.js installieren:
 
-[source, bash]
-----
+```bash
 $ npm install express
-----
+```
 
 Dies installiert Express.js in deinem Projekt und legt ein Verzeichnis `node_modules/` an, in dem alle Abhängigkeiten gespeichert werden.
 
 Um Pakete global auf deinem System zu installieren (z.B. für CLI-Tools), kannst du das Flag `-g` verwenden:
 
-[source, bash]
-----
+```bash
 $ npm install -g nodemon
-----
+```
 
 Nodemon ist ein Tool, das es ermöglicht, Node.js-Skripte automatisch bei Dateiänderungen neu zu starten.
 
@@ -107,8 +102,7 @@ Wenn du NPM-Pakete in deinem Projekt installierst, wird die Datei `package.json`
 
 Hier ist ein Beispiel für eine einfache `package.json` Datei:
 
-[source, json]
-----
+```json
 {
   "name": "mein-projekt",
   "version": "1.0.0",
@@ -121,14 +115,13 @@ Hier ist ein Beispiel für eine einfache `package.json` Datei:
     "express": "^4.17.1"
   }
 }
-----
+```
 
 Die `package.json` Datei listet die Abhängigkeiten deines Projekts auf und macht es einfach, das Projekt auf einem anderen Computer zu replizieren. Du kannst alle Abhängigkeiten durch den folgenden Befehl neu installieren:
 
-[source, bash]
-----
+```bash
 $ npm install
-----
+```
 
 Dieser Befehl installiert alle Pakete, die in der `package.json` Datei unter "dependencies" aufgeführt sind.
 
@@ -137,13 +130,13 @@ Dieser Befehl installiert alle Pakete, die in der `package.json` Datei unter "de
 Express.js ist ein minimaler und flexibler Web-Framework für Node.js, das die Erstellung von Webanwendungen und APIs erleichtert. Hier ist ein einfaches Beispiel, das zeigt, wie du einen Webserver mit Express.js erstellen kannst:
 
 Installiere zuerst Express.js in deinem Projekt:
-[source, bash]
-----
+```bash
 $ npm install express
-----
+```
 
-[source, javascript]
-----
+Dann erstelle eine Datei `server.js` mit folgendem Inhalt:
+
+```javascript
 const express = require('express');
 const app = express();
 const port = 3000;
@@ -155,7 +148,7 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}/`);
 });
-----
+```
 
 ### Erklärung
 
@@ -167,10 +160,9 @@ app.listen(port, () => {
 
 Um den Server auszuführen, speichere das Skript als `server.js` und führe es mit Node.js aus:
 
-[source, bash]
-----
+```bash
 $ node server.js
-----
+```
 
 Dann öffne deinen Browser und rufe `http://127.0.0.1:3000` auf, um die Ausgabe "Hello, World!" zu sehen.
 
