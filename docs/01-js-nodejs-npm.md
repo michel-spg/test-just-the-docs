@@ -4,11 +4,13 @@ nav_order: 2
 layout: default
 ---
 
-## WMC - Einführung in Node.js und NPM
+![bg left:50% 80%](../assets/imgs/spg_logo.png)
+
+# WMC - Einführung in Node.js und NPM
 
 Node.js ist eine Plattform, die es ermöglicht, JavaScript auf der Server-Seite auszuführen.
 
-### Wozu wird Node.js genutzt?
+## Wozu wird Node.js genutzt?
 
 Node.js eignet sich besonders gut für Anwendungen, die schnelle und effiziente I/O-Operationen erfordern. Es ist beliebt für die Entwicklung von:
 
@@ -18,7 +20,7 @@ Node.js eignet sich besonders gut für Anwendungen, die schnelle und effiziente 
 - **APIs**: RESTful-APIs und GraphQL-APIs werden oft in Node.js entwickelt, da es leichtgewichtig und asynchron ist.
 - **Mikroservices**: Node.js eignet sich hervorragend für die Erstellung von leichtgewichtigen Mikroservices, die auf Container-basierte Architekturen wie Docker und Kubernetes abgestimmt sind.
 
-### Merkmale von Node.js
+## Merkmale von Node.js
 
 Node.js bietet einige wichtige Funktionen, die es für bestimmte Anwendungsfälle besonders nützlich machen:
 
