@@ -1,6 +1,7 @@
 ---
 title: "Node.js und NPM"
 nav_order: 1
+layout: default
 ---
 
 == WMC - Einführung in Node.js und NPM
