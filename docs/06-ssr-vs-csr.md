@@ -1,7 +1,7 @@
 ---
 title: "SSR vs. CSR"
 description: "Server-Side Rendering (SSR) vs. Client-Side Rendering (CSR)"
-nav_order: 3
+nav_order: 4
 layout: default
 ---
 
